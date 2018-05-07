@@ -158,20 +158,29 @@ def calcBindingEnergy(r_tr, M_PBH):
     return -G_N*4*np.pi*quad(integ,1e-8, 1.0*r_tr, epsrel=1e-3)[0]
 
 def getBindingEnergy(r_tr, M_PBH):
-    global current_MPBH, Ubind_interp
-    if ((M_PBH - current_MPBH)**2 >1e-3):
+    global current_MPBH, Ubind_interp, rtr_interp
+    if ((M_PBH - current_MPBH)**2 >1e-3 or Ubind_interp == None):
         current_MPBH = M_PBH
-        print "   Tabulating binding energy..."
+        print "   Tabulating binding energy and truncation radius (M_PBH = " + str(M_PBH) +")..."
         rtr_vals = np.logspace(np.log10(1e-8), np.log10(1.0*r_eq(M_PBH)),500)
         Ubind_vals = np.asarray([calcBindingEnergy(r1, M_PBH) for r1 in rtr_vals])
         Ubind_interp = interp1d(rtr_vals, Ubind_vals)
+        
+        rtr_interp = GetRtrInterp(M_PBH)
+        
     return Ubind_interp(r_tr) 
 
 
 def calc_af(ai, M_PBH):
-    global rtr_interp
+    global current_MPBH, rtr_interp, Ubind_interp
     
-    if (rtr_interp == None):
+    if ((M_PBH - current_MPBH)**2 > 1e-3 or rtr_interp == None):
+        current_MPBH = M_PBH
+        print "   Tabulating binding energy and truncation radius (M_PBH = " + str(M_PBH) +")..."
+        rtr_vals = np.logspace(np.log10(1e-8), np.log10(1.0*r_eq(M_PBH)),500)
+        Ubind_vals = np.asarray([calcBindingEnergy(r1, M_PBH) for r1 in rtr_vals])
+        Ubind_interp = interp1d(rtr_vals, Ubind_vals)
+        
         rtr_interp = GetRtrInterp(M_PBH)
     
     #r_tr = CalcTruncRadius(ai, M_PBH)
@@ -181,7 +190,11 @@ def calc_af(ai, M_PBH):
     #print Mtot
     U_orb_before = -G_N*(Mtot**2)/(2.0*ai)
     
-    Ubind = getBindingEnergy(r_tr, M_PBH)
+    if (r_tr > r_eq(M_PBH)):
+        Ubind =  getBindingEnergy(r_eq(M_PBH), M_PBH)
+    else:
+        #print r_tr, r_eq(M_PBH)
+        Ubind = getBindingEnergy(r_tr, M_PBH)
     return -G_N*M_PBH**2*0.5/(U_orb_before + 2.0*Ubind)
     
 def calc_jf(ji, ai, M_PBH):

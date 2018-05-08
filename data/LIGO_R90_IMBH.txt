@@ -1,0 +1,6 @@
+#The 90% upper limit on the merger rate for intermediate mass black holes
+#Taken from Table 1 of 1704.04628, for non-spinning BHs
+#Columns: M_BH [M_solar], R_90% [Gpc^-3 yr^-1]
+100	2.0
+200	5.0
+300	20.0

@@ -16,6 +16,7 @@ Summary of notebooks (so far):
 * `RemappingExamples.ipynb` - Example of how the remapping works, including a plot of the final semi-major axis as a function of initial semi-major axis
 * `PBH-sampling.ipynb` - Very rough example notebook for how the sampling procedure (using emcee) works
 * `LIGO_limits.ipynb` - Notebook calculating the upper limit on the merger rate from LIGO, for a range of BH masses. The key output results can be found in `data/LIGO_R90.txt`.
+* `Nbody_analysis.ipynb` - Notebook for plotting the results of the N-body simulations.
 
 
 ## Requirements

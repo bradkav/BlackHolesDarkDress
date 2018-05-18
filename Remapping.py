@@ -1,4 +1,5 @@
-from __future__ import division
+from __future__ import division, print_function
+
 import numpy as np
 
 from scipy.interpolate import interp1d
@@ -70,6 +71,7 @@ def z_decoupling(a, f, mass):
     return (1. + z_eq)/(1./3 * bigX(x_of_a(a, f, mass), f, mass)/(0.85*f)) - 1.
 
 #--------------------------------------
+print("Need to improve this calculation - using the easier method that Daniele suggested...")
 def GetRtrInterp(M_PBH):
     global rtr_interp
     
@@ -161,7 +163,7 @@ def getBindingEnergy(r_tr, M_PBH):
     global current_MPBH, Ubind_interp, rtr_interp
     if ((M_PBH - current_MPBH)**2 >1e-3 or Ubind_interp == None):
         current_MPBH = M_PBH
-        print "   Tabulating binding energy and truncation radius (M_PBH = " + str(M_PBH) +")..."
+        print("   Tabulating binding energy and truncation radius (M_PBH = " + str(M_PBH) +")...")
         rtr_vals = np.logspace(np.log10(1e-8), np.log10(1.0*r_eq(M_PBH)),500)
         Ubind_vals = np.asarray([calcBindingEnergy(r1, M_PBH) for r1 in rtr_vals])
         Ubind_interp = interp1d(rtr_vals, Ubind_vals)
@@ -176,7 +178,7 @@ def calc_af(ai, M_PBH):
     
     if ((M_PBH - current_MPBH)**2 > 1e-3 or rtr_interp == None):
         current_MPBH = M_PBH
-        print "   Tabulating binding energy and truncation radius (M_PBH = " + str(M_PBH) +")..."
+        print("   Tabulating binding energy and truncation radius (M_PBH = " + str(M_PBH) +")...")
         rtr_vals = np.logspace(np.log10(1e-8), np.log10(1.0*r_eq(M_PBH)),500)
         Ubind_vals = np.asarray([calcBindingEnergy(r1, M_PBH) for r1 in rtr_vals])
         Ubind_interp = interp1d(rtr_vals, Ubind_vals)

@@ -1,0 +1,1000 @@
+
+This is Gadget, version `2.0'.
+
+Running on 16 processors.
+
+Allocated 100 MByte communication buffer per processor.
+
+Communication buffer has room for 1139756 particles in gravity computation
+Communication buffer has room for 436906 particles in density computation
+Communication buffer has room for 344926 particles in hydro computation
+Communication buffer has room for 354248 particles in domain decomposition
+
+
+Hubble (internal units) = 1.00001e-09
+G (internal units) = 430.068
+UnitMass_in_g = 1.989e+33 
+UnitTime_in_s = 3.0857e+08 
+UnitVelocity_in_cm_per_s = 100000 
+UnitDensity_in_cgs = 6.76977e-08 
+UnitEnergy_in_cgs = 1.989e+43 
+
+
+Allocated 1.29318 MByte for particle storage. 120
+
+
+reading file `/scratch/1445806.batch1.lisa.surfsara.nl/M30_a0.01_lo_bin_e0.995_full/run/PBH1.dat' on task=0 (contains 18082 particles.)
+distributing this file to tasks 0-15
+Type 0 (gas):          0  (tot=     0000000000) masstab=0
+Type 1 (halo):         2  (tot=     0000000002) masstab=0
+Type 2 (disk):     18080  (tot=     0000018080) masstab=0
+Type 3 (bulge):        0  (tot=     0000000000) masstab=0
+Type 4 (stars):        0  (tot=     0000000000) masstab=0
+Type 5 (bndry):        0  (tot=     0000000000) masstab=0
+
+reading done.
+Total number of particles :  0000018082
+
+allocated 0.0762939 Mbyte for ngb search.
+
+Allocated 12.919 MByte for BH-tree. 112
+
+domain decomposition... 
+NTopleaves= 8310
+work-load balance=1.01759   memory-balance=1.01759
+exchange of 0000016183 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Begin Ngb-tree construction.
+Ngb-Tree contruction finished 
+
+Setting next time for snapshot file to Time_next= 0
+
+
+writing snapshot file... 
+done with snapshot.
+
+Setting next time for snapshot file to Time_next= 0.999995
+
+
+Begin Step 0, Time: 0, Systemstep: 0
+domain decomposition... 
+NTopleaves= 1247
+work-load balance=1.02732   memory-balance=1.02732
+exchange of 0000000155 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 1, Time: 0.000953674, Systemstep: 0.000953674
+domain decomposition... 
+NTopleaves= 1261
+work-load balance=1.01781   memory-balance=1.24765
+exchange of 0000001222 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 2, Time: 0.00190735, Systemstep: 0.000953674
+domain decomposition... 
+NTopleaves= 1408
+work-load balance=1.02659   memory-balance=1.22907
+exchange of 0000000068 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 3, Time: 0.00286102, Systemstep: 0.000953674
+domain decomposition... 
+NTopleaves= 1415
+work-load balance=1.01775   memory-balance=1.24765
+exchange of 0000000068 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 4, Time: 0.0038147, Systemstep: 0.000953674
+domain decomposition... 
+NTopleaves= 1408
+work-load balance=1.02713   memory-balance=1.22907
+exchange of 0000000069 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 5, Time: 0.00476837, Systemstep: 0.000953674
+domain decomposition... 
+NTopleaves= 1408
+work-load balance=1.01771   memory-balance=1.24853
+exchange of 0000000072 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 6, Time: 0.00572205, Systemstep: 0.000953674
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01775   memory-balance=1.26977
+exchange of 0000000083 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 7, Time: 0.00667572, Systemstep: 0.000953674
+domain decomposition... 
+NTopleaves= 1408
+work-load balance=1.01778   memory-balance=1.25827
+exchange of 0000000016 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 8, Time: 0.00762939, Systemstep: 0.000953674
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01792   memory-balance=1.26977
+exchange of 0000000016 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 9, Time: 0.00858307, Systemstep: 0.000953674
+domain decomposition... 
+NTopleaves= 1408
+work-load balance=1.01799   memory-balance=1.25827
+exchange of 0000000020 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 10, Time: 0.00953674, Systemstep: 0.000953674
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.02635   memory-balance=1.22907
+exchange of 0000000093 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 11, Time: 0.0100136, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 12, Time: 0.0104904, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1408
+work-load balance=1.01825   memory-balance=1.25827
+exchange of 0000000095 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 13, Time: 0.0109673, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 14, Time: 0.0114441, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.02616   memory-balance=1.22995
+exchange of 0000000129 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 15, Time: 0.0119209, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 16, Time: 0.0123978, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1408
+work-load balance=1.0182   memory-balance=1.2503
+exchange of 0000000071 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 17, Time: 0.0128746, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 18, Time: 0.0133514, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01806   memory-balance=1.22907
+exchange of 0000000108 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 19, Time: 0.0138283, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 20, Time: 0.0143051, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1408
+work-load balance=1.01789   memory-balance=1.24942
+exchange of 0000000107 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 21, Time: 0.014782, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 22, Time: 0.0152588, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01784   memory-balance=1.22995
+exchange of 0000000111 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 23, Time: 0.0157356, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 24, Time: 0.0162125, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1408
+work-load balance=1.01758   memory-balance=1.25915
+exchange of 0000000169 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 25, Time: 0.0166893, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 26, Time: 0.0171661, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01771   memory-balance=1.23172
+exchange of 0000000168 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 27, Time: 0.017643, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 28, Time: 0.0181198, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01769   memory-balance=1.25915
+exchange of 0000000166 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 29, Time: 0.0185966, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 30, Time: 0.0190735, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01792   memory-balance=1.23261
+exchange of 0000000166 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 31, Time: 0.0195503, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 32, Time: 0.0200272, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1408
+work-load balance=1.0181   memory-balance=1.25207
+exchange of 0000000106 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 33, Time: 0.020504, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 34, Time: 0.0209808, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1394
+work-load balance=1.01798   memory-balance=1.23349
+exchange of 0000000109 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 35, Time: 0.0214577, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 36, Time: 0.0219345, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01803   memory-balance=1.25296
+exchange of 0000000107 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 37, Time: 0.0224113, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 38, Time: 0.0228882, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1387
+work-load balance=1.01781   memory-balance=1.23261
+exchange of 0000000108 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 39, Time: 0.023365, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 40, Time: 0.0238419, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1394
+work-load balance=1.01772   memory-balance=1.26004
+exchange of 0000000165 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 41, Time: 0.0243187, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 42, Time: 0.0247955, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1394
+work-load balance=1.01764   memory-balance=1.23438
+exchange of 0000000199 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 43, Time: 0.0252724, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 44, Time: 0.0257492, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01777   memory-balance=1.26092
+exchange of 0000000197 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 45, Time: 0.026226, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 46, Time: 0.0267029, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1394
+work-load balance=1.02819   memory-balance=1.23349
+exchange of 0000000127 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 47, Time: 0.0271797, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 48, Time: 0.0276566, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.0178   memory-balance=1.26092
+exchange of 0000000124 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 49, Time: 0.0281334, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 50, Time: 0.0286102, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1394
+work-load balance=1.01781   memory-balance=1.24676
+exchange of 0000000107 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 51, Time: 0.0290871, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 52, Time: 0.0295639, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01822   memory-balance=1.25296
+exchange of 0000000121 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 53, Time: 0.0300407, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 54, Time: 0.0305176, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1394
+work-load balance=1.01825   memory-balance=1.27154
+exchange of 0000000032 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 55, Time: 0.0309944, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 56, Time: 0.0314713, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01827   memory-balance=1.25296
+exchange of 0000000033 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 57, Time: 0.0319481, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 58, Time: 0.0324249, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1394
+work-load balance=1.01837   memory-balance=1.26977
+exchange of 0000000036 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 59, Time: 0.0329018, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 60, Time: 0.0333786, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01822   memory-balance=1.25738
+exchange of 0000000025 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 61, Time: 0.0338554, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 62, Time: 0.0343323, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1394
+work-load balance=1.01789   memory-balance=1.26889
+exchange of 0000000030 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 63, Time: 0.0348091, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 64, Time: 0.0352859, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01736   memory-balance=1.2565
+exchange of 0000000039 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 65, Time: 0.0357628, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 66, Time: 0.0362396, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1394
+work-load balance=1.01726   memory-balance=1.268
+exchange of 0000000025 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 67, Time: 0.0367165, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 68, Time: 0.0371933, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.0174   memory-balance=1.25207
+exchange of 0000000034 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 69, Time: 0.0376701, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 70, Time: 0.038147, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1394
+work-load balance=1.0259   memory-balance=1.23526
+exchange of 0000000068 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 71, Time: 0.0386238, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 72, Time: 0.0391006, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1401
+work-load balance=1.01758   memory-balance=1.26004
+exchange of 0000000123 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 73, Time: 0.0395775, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 74, Time: 0.0400543, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1387
+work-load balance=1.02542   memory-balance=1.23615
+exchange of 0000000132 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 75, Time: 0.0405312, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 76, Time: 0.041008, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1394
+work-load balance=1.01747   memory-balance=1.25915
+exchange of 0000000132 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 77, Time: 0.0414848, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 78, Time: 0.0419617, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1380
+work-load balance=1.02562   memory-balance=1.23526
+exchange of 0000000121 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 79, Time: 0.0424385, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 80, Time: 0.0429153, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1387
+work-load balance=1.01755   memory-balance=1.25827
+exchange of 0000000122 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 81, Time: 0.0433922, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 82, Time: 0.043869, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1380
+work-load balance=1.02404   memory-balance=1.23438
+exchange of 0000000122 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 83, Time: 0.0443459, Systemstep: 0.000476837
+Start force computation...
+Begin tree force.
+tree is done.
+force computation done.
+
+Begin Step 84, Time: 0.0448227, Systemstep: 0.000476837
+domain decomposition... 
+NTopleaves= 1387
+work-load balance=1.01721   memory-balance=1.25915
+exchange of 0000000119 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.

@@ -27,6 +27,9 @@ def lnprior(theta, M_PBH, a1, a2):
     a = 10**la
     j = 10**lj
     
+    if (j > 1):
+        return -np.inf
+    
     if (a < a1 or a > a2):
         return -np.inf
         

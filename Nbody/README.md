@@ -26,15 +26,10 @@ Alternatively you can visit [doi:10.6084/m9.figshare.6300110](https://doi.org/10
 ### Code
 
 * `CalcOrbitalElements.ipynb` - Calculate the semi-major axis and eccentricity of the PBH binary system during the course of the simulations
-
 * `PlotSimulationResults.ipynb` - Read in simulation results and plot some properties of the system - such as separation, enclosed DM halo mass and angular momentum.
-
 * `NbodyResults.ipynb` - Notebook for plotting the results of the N-body simulations (final semi-major axis and eccentricity, etc).
-
 * `DistributionFunction.ipynb` - Notebook for generating the distribution function for a given DM halo, following the Eddington inversion formula.
-
 * `GenerateICs_*.py` - A number of scripts for generating the Gadget-2 snapshots for the initial conditions. These rely on `PBH.py` and `eddington.py` to sample from the DM halo distribution function. *More details on how to use these initial conditions generators will be added soon.*
-
 *  `animate.py` and `animate_zoom.py` - Scripts for generating movies from snapshot files.
 
 

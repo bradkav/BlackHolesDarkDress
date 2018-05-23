@@ -24,7 +24,7 @@ import eddington as edd
 
 L_sim = 1e-5 #pc
 
-
+#Old code for adding a single dressed PBH, without multi-mass scheme
 def AddDressedPBH(body,DMinds, PBHind,nDM, x0, v0, r_soft, a, verbose=False, haloID="nothing"):
     """Add a dressed PBH to the initial conditions...
     
@@ -222,23 +222,6 @@ def AddDressedPBH(body,DMinds, PBHind,nDM, x0, v0, r_soft, a, verbose=False, hal
             headertxt = "Number of DM particles: " + str(nDM) + ". Softening length [pc]: " + str(r_soft)
             headertxt += "\nColumns: x [pc], y [pc], z [pc], vx [km/s], vy [km/s], vz [km/s]"
             np.savetxt("halos/" + haloID + ".txt", zip(xvals,yvals,zvals,vxvals,vyvals,vzvals), header=headertxt)
-
-        """
-        #Tell us a bunch of stuff
-        if (verbose):
-            print "Initial momentum [M_solar km/s]:", momentum
-            print "Net DM velocity (before subtraction) [km/s]:", momentum/body.mass[DMinds[0]]
-            print "Net DM velocity (after subtraction) [km/s]:", momentum/body.mass[DMinds[0]] - nDM*momentum/totmass
-            print "Max DM velocity:",vDM[np.argmax(vvals),:]
-            print "Max DM speed:",np.max(vvals)
-        
-            print "    "
-        """
-        #pl.figure()
-        #pl.plot(rvals/r_tr,np.sqrt(np.sum(vDM**2, axis=-1)), "+")
-        #pl.xlabel(r"$r/r_\mathrm{tr}$")
-        #pl.ylabel(r"$v_\mathrm{DM}$ [km/s]")
-        #pl.show()
         
         
     
@@ -252,25 +235,6 @@ def AddDressedPBH(body,DMinds, PBHind,nDM, x0, v0, r_soft, a, verbose=False, hal
     pl.hist(np.log10(rDM), bins=np.linspace(-6, -1, 26))
     pl.show()
     
-    """
-    x_c_list = np.logspace(np.log10(1e-5), np.log10(np.max(rDM)))
-    xb_list = 0.0*x_c_list
-    
-    for i in range(len(xb_list)):
-        x_c = x_c_list[i]
-        N1 = np.sum(rDM < x_c)
-    #print "Number close to centre:", N1
-        V1 = 4*np.pi*(x_c**3)/3.0
-        xb_list[i] = (3.0/(4*np.pi*(N1/V1)))**(1.0/3.0)
-    #print "Mean separation close to centre:", (3.0/(4*np.pi*(N1/V1)))**(1.0/3.0)
-    
-    print "Softening length should be (r_eq): ", 0.5e-5/r_eq
-    print "Softening length (1/35) should be (r_eq):", (1.0/35.0)*xb_list[-1]/r_eq
-    
-    pl.figure()
-    pl.loglog(x_c_list, xb_list)
-    pl.show()
-    """
     #Subtract off any net momentum of the system
     totmass = np.sum(body.mass[DMinds])+body.mass[PBHind]
     momentum = np.zeros(3)
@@ -820,6 +784,7 @@ def AddDressedPBH_seg( x0, v0, r_soft, M_PBH, a, N_inner = 100,delta_Rm = 50, ve
     return mlist_out, xlist_out, vlist_out
     
     
+#Read in a DM halo from file
 def GetDressedPBH_fromfile(nDM_inner, M_PBH,  a,  halofile_root, verbose=False):
 
     edd.loadDistribution(M_PBH,a)

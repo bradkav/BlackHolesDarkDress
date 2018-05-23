@@ -2,7 +2,7 @@
 
 Code for studying primordial black hole (PBH) binaries, clothed in dark matter (DM) halos. 
 
-<img src="movies/snapshot1.png" alt="alt text" width=200> <img src="movies/snapshot2.png" alt="alt text" width=200> <img src="movies/snapshot3.png" alt="alt text" width=200>
+<img src="movies/snapshot1.png" alt="alt text" width=250> <img src="movies/snapshot2.png" alt="alt text" width=250> <img src="movies/snapshot3.png" alt="alt text" width=250>
 
 If you have any questions, comments, bug-reports etc., please contact Bradley Kavanagh at bradkav@gmail.com. 
 

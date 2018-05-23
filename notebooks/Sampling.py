@@ -34,7 +34,7 @@ def lnprior(theta, M_PBH, a1, a2):
         return -np.inf
         
     t = t_coal(a, np.sqrt(1-j**2), M_PBH=M_PBH)
-    if (t < 1e8 or t > 1e11):
+    if (t < 1e9 or t > 1e11):
         return -np.inf
     
     return 0
@@ -58,7 +58,7 @@ def lnprob(theta, f, M_PBH, PDF, a1, a2):
 #a1 and a2 are the desired ranges for a
 def GetSamples_MCMC(N_samps, PDF, a1, a2, f, M_PBH):
     
-    ndim, nwalkers = 2, 100
+    ndim, nwalkers = 2, 10
     
     a0 = np.sqrt(a1*a2)
     j0 = j_coal(a0, 13e9, M_PBH)
@@ -72,6 +72,6 @@ def GetSamples_MCMC(N_samps, PDF, a1, a2, f, M_PBH):
     sampler.run_mcmc(p0, N_samps)
     
     samples = sampler.chain[:, 1000:, :].reshape((-1, ndim))
-    stride = 10
-    print "   Generated ", len(samples[::stride,:]), "samples..."
+    stride = 5
+    #print "   Generated ", len(samples[::stride,:]), "samples..."
     return samples[::stride,:]

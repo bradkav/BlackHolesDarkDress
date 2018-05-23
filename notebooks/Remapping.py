@@ -10,7 +10,7 @@ from scipy.integrate import quad
 alpha = 0.1
 z_eq = 3375.0
 rho_eq = 1512.0 #Solar masses per pc^3
-lambda_max = 3.0
+lambda_max = 3.0 #Decouple at a maximum redshift of z_dec = z_eq (lambda = 3.0*z_dec)
 
 G_N = 4.302e-3 #Units of (pc/solar mass) (km/s)^2
 
@@ -71,9 +71,10 @@ def z_decoupling(a, f, mass):
     return (1. + z_eq)/(1./3 * bigX(x_of_a(a, f, mass), f, mass)/(0.85*f)) - 1.
 
 #--------------------------------------
-print("Need to improve this calculation - using the easier method that Daniele suggested...")
 def GetRtrInterp(M_PBH):
     global rtr_interp
+    
+    #NB: We set f = 0.01 in here, because actually f cancels everywhere in some parts of the calculation...
     
     am = a_max(0.01, M_PBH, withHalo=True)
     a_list = np.logspace(-8, np.log10(am*1.1), 101)

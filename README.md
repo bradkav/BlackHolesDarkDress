@@ -16,23 +16,16 @@ If you have any questions, comments, bug-reports etc., please contact Bradley Ka
 The code, plots, data-products, etc. are arranged as follows:
 
 * `Nbody/` - Code for setting up, running and analysing the Gadget-2 simulations. Note that the snapshot files are stored on FigShare - [https://doi.org/10.6084/m9.figshare.6300110](https://doi.org/10.6084/m9.figshare.6300110) - and there are a couple of scripts in this folder for downloading and unpacking them.
-
 * `movies/` - Animations of selected N-body simulations.
-
 * `plots/` - Plots associated with the code and paper. Some of the plots appearing here do not feature in the paper, but we provide them for extra information.
-
 * `data/` - Some data files which are needed for calculating limits (sensitivity curves, etc.). Our limits on the PBH fraction from LIGO observations are in tabulated `data/LIGO_limit_f.txt/`.
-
 * `notebooks/` - Contains jupyter notebooks for performing the main calculations in the paper associated with the PDFs of binary system, as well as calculating the merger rates and LIGO limits.
 
 Summary of main notebooks (so far):
 
 * `notebooks/RemappingExamples.ipynb` - Example of how the remapping works, including a plot of the final semi-major axis as a function of initial semi-major axis
-
 * `notebooks/LIGO_sensitivities.ipynb` - Notebook for estimating the LIGO sensitivity curves S(z)
-
 * `notebooks/MergerRate.ipynb` - Notebook for calculating and plotting the distribution in (a, j) of PBH binaries, applying the remapping procedure and calculating the corresponding merger rate. Much of the code for defining the probability distributions and performing the remapping is also available as a module in `Remapping.py` and `Sampling.py`.
-
 * `notebooks/LIGO_limits.ipynb` - Notebook calculating the upper limit on the merger rate from LIGO, for a range of BH masses.
 
 

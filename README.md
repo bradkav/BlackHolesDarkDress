@@ -1,6 +1,6 @@
 # BlackHolesDarkDress
 
-[![DOI](https://zenodo.org/badge/131850900.svg)](https://zenodo.org/badge/latestdoi/131850900)  [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![DOI](https://zenodo.org/badge/131850900.svg)](https://zenodo.org/badge/latestdoi/131850900) [![arXiv](https://img.shields.io/badge/arXiv-1805.09034-B31B1B.svg)](https://arxiv.org/abs/1805.09034) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 Code for studying primordial black hole (PBH) binaries, clothed in dark matter (DM) halos, associated with the paper "*Black Holes' Dark Dress: On the merger rate of a subdominant population of primordial black holes*". We use N-body simulations (along with analytical estimates) to follow the evolution of PBH binaries formed in the early Universe. **Movies are available [here](movies/) (archived on [FigShare](https://doi.org/10.6084/m9.figshare.6298397)).**
 
